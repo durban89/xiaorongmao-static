@@ -3,18 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: "小绒毛"
+subtitle: "Durban's Blog"
+description: '人最大的烦恼，就是记性太好'
+keywords: '日记,PHP,Linux,Python,iOS,Java,Nodejs,MySQL'
+author: 'durban'
+email: 'durban.zhang@gmail.com'
+language: 'zh-CN'
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://blog.xiaorongmao.com
+permalink: :year/:month/:day/:title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -93,12 +94,88 @@ include:
 exclude:
 ignore:
 
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template: 
+
+# 生成 sitemap
+# npm install hexo-generator-sitemap --save
+# npm install hexo-generator-baidu-sitemap --save
+sitemap:
+  path: sitemap.xml
+
+marked:
+  gfm: true
+  pedantic: false
+  breaks: true
+  smartLists: true
+  smartypants: true
+  quotes: '“”‘’'
+  modifyAnchors: 0
+  anchorAlias: true
+  autolink: true
+  mangle: true
+  sanitizeUrl: false
+  dompurify: false
+  headerIds: true
+  lazyload: false
+  figcaption: false
+  prependRoot: true
+  postAsset: false
+  external_link:
+    enable: false
+    exclude: []
+    nofollow: false
+  disableNunjucks: false
+  descriptionLists: true
+
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: true
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
+    
+# search
+# 配置本地搜索，主站配置 hexo config 
+# 需要安装插件：$ npm install hexo-generator-searchdb --save
+# 详细配置请参考：https://theme-next.js.org/docs/third-party-services/search-services.html#Local-Search
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repo: 'git@github.com:durban89/durban89.github.io.git'
+  branch: gh-pages
