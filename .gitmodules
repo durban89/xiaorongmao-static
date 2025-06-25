@@ -1,0 +1,3 @@
+[submodule "themes/next"]
+	path = themes/next
+	url = git@github_407534636:durban89/hexo-theme-next.git
