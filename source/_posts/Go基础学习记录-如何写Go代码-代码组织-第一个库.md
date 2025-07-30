@@ -1,5 +1,5 @@
 ---
-date: '2025-07-30T14:59:15.495104+08:00'
+date: '2025-07-30 14:59:15'
 title: 'Go基础学习记录 - 如何写Go代码 - 代码组织(第一个库)'
 image: 'https://res.cloudinary.com/dy5dvcuc1/image/upload/v1595385476/xiaorongmao/golang.jpg'
 categories:

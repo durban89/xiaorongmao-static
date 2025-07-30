@@ -1,5 +1,5 @@
 ---
-date: '2025-07-30T14:59:27.953889+08:00'
+date: '2025-07-30 14:59:27'
 title: 'Go基础学习记录 - 包、变量和函数'
 image: 'https://res.cloudinary.com/dy5dvcuc1/image/upload/v1595385476/xiaorongmao/golang.jpg'
 categories:

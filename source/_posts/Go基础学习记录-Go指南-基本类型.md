@@ -1,5 +1,5 @@
 ---
-date: '2025-07-30T14:59:31.135301+08:00'
+date: '2025-07-30 14:59:31'
 title: 'Go基础学习记录 - Go指南 - 基本类型'
 image: 'https://res.cloudinary.com/dy5dvcuc1/image/upload/v1595385476/xiaorongmao/golang.jpg'
 categories:

@@ -1,5 +1,5 @@
 ---
-date: '2025-07-30T14:58:57.756546+08:00'
+date: '2025-07-30 14:58:57'
 title: 'Go基础学习记录 - 如何写Go代码 - 代码组织(概要、工作区、GOPATH环境变量)'
 image: 'https://res.cloudinary.com/dy5dvcuc1/image/upload/v1595385476/xiaorongmao/golang.jpg'
 categories:
