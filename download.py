@@ -465,8 +465,9 @@ class WebPageAnalyzer:
         if tags is None:
             tags = ["Golang"]
             
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         # 获取当前时间并设置时区为东八区
-        current_time = datetime.now(ZoneInfo('Asia/Shanghai')).isoformat()
+        # current_time = datetime.now(ZoneInfo('Asia/Shanghai')).isoformat()
 
         front_matter = f"""---
 date: '{current_time}'
