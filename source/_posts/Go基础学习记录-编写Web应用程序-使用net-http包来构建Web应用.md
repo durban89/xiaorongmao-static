@@ -56,5 +56,5 @@ $ go build wiki.go
 $ ./wiki
 ```
 
-运行此Web服务器后，访问http://localhost:8090/view/test应显示一个标题为"test"的页面，其中包含"I Like Gowhich"字样。  
+运行此Web服务器后，访问 http://localhost:8090/view/test 应显示一个标题为"test"的页面，其中包含"I Like Gowhich"字样。  
 但是访问其他页面的时候，则程序会报错。这个问题我们后面慢慢解决

@@ -1,6 +1,6 @@
 ---
 date: '2025-08-01 09:22:08'
-title: 'Go基础学习记录 - 编写Web应用程 - Web开发输入验证(一)'
+title: 'Go基础学习记录 - 编写Web应用程序 - Web开发输入验证(一)'
 image: 'https://res.cloudinary.com/dy5dvcuc1/image/upload/v1595385476/xiaorongmao/golang.jpg'
 categories:
     - "技术"

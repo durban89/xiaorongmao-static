@@ -1,6 +1,6 @@
 ---
 date: '2025-08-01 09:22:20'
-title: 'Go基础学习记录 - 编写Web应用程 - XSS'
+title: 'Go基础学习记录 - 编写Web应用程序 - XSS'
 image: 'https://res.cloudinary.com/dy5dvcuc1/image/upload/v1595385476/xiaorongmao/golang.jpg'
 categories:
     - "技术"
