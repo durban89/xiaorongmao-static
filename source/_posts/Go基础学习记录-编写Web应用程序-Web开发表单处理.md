@@ -42,7 +42,7 @@ git checkout 1.0.0
 </form>
 ```
 
-此表单将提交到服务器上的/save/{{.Title}}。  
+此表单将提交到服务器上的`/save/{{.Title}}`。  
 用户单击Submit按钮后，数据将被发送到服务器路由器注册的save处理程序。  
 然后我们需要知道它是使用POST方法还是GET。这里很明显是POST  
 使用http包很容易找到。  

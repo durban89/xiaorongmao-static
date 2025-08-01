@@ -16,14 +16,14 @@ tags:
 
 项目地址
 
-```javascript
+```bash
 https://github.com/durban89/wiki_blog
 tag: 1.0.5
 ```
 
 有些同学可能看不懂，怎么就只给了这些，完全不懂呀。我把使用的命令打出来，照着操作，就应该可以解决了
 
-```javascript
+```bash
 git clone https://github.com/durban89/wiki_blog /local/path
 cd /local/path
 git fetch origin
@@ -50,36 +50,36 @@ git checkout 1.0.5
 让我们通过例子来演示下  
 这里我在ArticleSave方法中加入如下代码
 
-```javascript
+```go
 fmt.Println("username:", template.HTMLEscapeString(r.Form.Get("author"))) // print at server side
 fmt.Println("password:", template.HTMLEscapeString(r.Form.Get("author")))
 template.HTMLEscape(w, []byte(r.Form.Get("author"))) // responded to clients
 ```
 
-如果有人试图将作者中输入为*<script>alert()</script>*，我们将分别在终端和浏览器中看到以下内容：  
+如果有人试图将作者中输入为`*<script>alert()</script>*`，我们将分别在终端和浏览器中看到以下内容：  
 终端显示如下
 
-```javascript
-author:  &lt;script&gt;alert()&lt;/script&gt;
-author:  &lt;script&gt;alert()&lt;/script&gt;
+```bash
+author:  &lt;script&gt;alert()&lt;/script&gt;
+author:  &lt;script&gt;alert()&lt;/script&gt;
 ```
 
 浏览器显示如下
 
-```javascript
+```bash
 &lt;script&gt;alert()&lt;/script&gt;
 ```
 
 如果你在测试的时候建议先运行下面这段代码
 
-```javascript
+```go
 fmt.Println("username:", template.HTMLEscapeString(r.Form.Get("author"))) // print at server side
 fmt.Println("password:", template.HTMLEscapeString(r.Form.Get("author")))
 ```
 
 然后在注释掉上面的在运行下面这段代码
 
-```javascript
+```go
 template.HTMLEscape(w, []byte(r.Form.Get("author"))) // responded to clients
 ```
 
@@ -88,64 +88,64 @@ template.HTMLEscape(w, []byte(r.Form.Get("author"))) // responded to clients
 ## 转义后的JavaScript
 
 html/template包中的函数可帮助您转义所有HTML标记。  
-如果您只想将*<script>alert()</script>*打印到浏览器怎么办？  
+如果您只想将`*<script>alert()</script>*`打印到浏览器怎么办？  
 您应该使用text/template。  
 这里我没修改下我们项目的Page结构体，添加一个Script，如下
 
-```javascript
+```go
 type Page struct {
-  Title  string
-  Body   []byte
-  Script string
+  Title  string
+  Body   []byte
+  Script string
 }
 ```
 
 然后需改ArticleView函数，在ArticleView中添加如下代码
 
-```javascript
+```go
 p.Script = "<script>alert('Web站开发实例')</script>"
 helpers.RenderTemplate(w, "view", p)
 ```
 
 然后在view.html添加如下代码
 
-```javascript
+```html
 {{.Script}}
 ```
 
 重新编译项目应运行，当我们访问view路由的时候，会看到类似如下的输出
 
-```javascript
+```html
 <script>alert('Web站开发实例')</script>
 ```
 
 我们还可以使用template.HTML类型：如果变量内容的类型为template.HTML，则不会对其进行转义。  
 这里我没修改下我们项目的Page结构体，添加一个Script，如下
 
-```javascript
+```go
 type Page struct {
-  Title  string
-  Body   []byte
-  Script string
-  Html   template.HTML
+  Title  string
+  Body   []byte
+  Script string
+  Html   template.HTML
 }
 ```
 
 然后需改ArticleView函数，在ArticleView中添加如下代码
 
-```javascript
+```go
 p.Html = template.HTML("<script>alert('Web站开发实例')</script>")
 ```
 
 然后在view.html添加如下代码
 
-```javascript
+```html
 {{.Html}}
 ```
 
 重新编译项目应运行，当我们访问view路由的时候，会看到类似如下的输出
 
-```javascript
+```html
 <script>alert('Web站开发实例')</script>
 ```
 
@@ -155,7 +155,7 @@ p.Html = template.HTML("<script>alert('Web站开发实例')</script>")
 
 项目更新地址
 
-```javascript
-https://github.com/durban89/typescript_demo.git
+```bash
+https://github.com/durban89/wiki_blog.git
 tag: 1.0.6
 ```

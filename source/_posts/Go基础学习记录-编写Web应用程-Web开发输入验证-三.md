@@ -92,7 +92,7 @@ func ValidateEnglish(str string) bool {
 ## 下拉列表
 
 假设我们需要一个来自下拉列表的项目，里面是文章的分类内容，但我们得到的是黑客捏造的值。我们如何防止这种情况发生？  
-假设我们有以下<select>：
+假设我们有以下 `<select>`：
 
 ```html
 <select name="category">
