@@ -95,7 +95,7 @@ $ cd $GOPATH/src/github.com/durban.zhang/hello
 
 $ git init
 
-Initialized empty Git repository in /home/durban/work/src/github.com/durban.zhang/hello/.git/
+Initialized empty Git repository in /home/xxx/work/src/github.com/durban.zhang/hello/.git/
 
 $ git add hello.go
 
