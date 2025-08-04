@@ -133,7 +133,8 @@ func ArticleItem(w http.ResponseWriter, r *http.Request) {
 
 添加后重新编译并访问/item就会看到如下类似的输出
 
-![](https://res.cloudinary.com/dy5dvcuc1/image/upload/v1536507943/xiaorongmao/golang_web_22_1.png)
+{% img https://res.cloudinary.com/dy5dvcuc1/image/upload/v1536507943/xiaorongmao/golang_web_22_1.png "" %}
+
 
 以上就是具体逻辑的输出，不过这里主要说下难点
 

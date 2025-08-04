@@ -35,7 +35,9 @@ tags:
 幸运的是，TCP/IP帮助我们解决了这个问题。  
 网络层的IP地址在主机网络中是唯一的，并且"协议+端口"在主机应用程序中也是唯一的。  
 因此，我们可以使用这些原则来制作独特的套接字。  
-![](https://cdn.xiaorongmao.com/up/golang_web_39_1.png)  
+
+{% img https://cdn.xiaorongmao.com/up/golang_web_39_1.png "" %}
+
 基于TCP/IP的应用程序都以某种方式在其代码中使用套接字API。  
 鉴于网络应用程序在现代变得越来越普遍，难怪一些开发人员说"一切都是关于套接字"。
 

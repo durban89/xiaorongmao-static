@@ -34,7 +34,8 @@ WebSocket URL以ws：//或wss：//（SSL）开头。
 然后，服务器或客户端能够通过WebSocket通过JavaScript发送或接收数据。  
 然后，事件处理程序可以使用此套接字异步接收数据。
 
-![](https://cdn.xiaorongmao.com/up/golang_web_43_1.png)
+{% img https://cdn.xiaorongmao.com/up/golang_web_43_1.png "" %}
+
 
 ## WebSocket原则
 
@@ -48,7 +49,8 @@ WebSocket连接由浏览器请求并由服务器响应，之后建立连接。
 
 请考虑以下请求和响应：
 
-![](https://cdn.xiaorongmao.com/up/golang_web_43_2.png)
+{% img https://cdn.xiaorongmao.com/up/golang_web_43_2.png "" %}
+
 
 “Sec-WebSocket-key”是随机生成的，正如您可能已经猜到的那样，它是base64编码的。  
 服务器需要在接受请求后将此密钥附加到固定字符串：

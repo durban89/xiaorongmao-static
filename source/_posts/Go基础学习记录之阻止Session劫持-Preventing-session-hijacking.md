@@ -59,12 +59,14 @@ Hi. Now count:{{.}}
 
 保持刷新直到数字变为10，然后打开浏览器的cookie管理器（我在这里使用firefox）。您应该能够看到以下信息：
 
-![](https://cdn.xiaorongmao.com/up/golang_web_30_1.png!/fh/500)  
+{% img https://cdn.xiaorongmao.com/up/golang_web_30_1.png!/fh/500 "" %}
+
+ 
 这一步非常重要：打开另一个浏览器(我在这里使用chrome)，将URL复制到新浏览器，打开一个cookie模拟器来创建一个新的cookie并输入与我们在第一个浏览器中看到的cookie完全相同的值。
 
 刷新页面，您将看到以下内容：
 
-![](https://cdn.xiaorongmao.com/up/golang_web_30_2.png!/fh/500)
+{% img https://cdn.xiaorongmao.com/up/golang_web_30_2.png!/fh/500 "" %}
 
 在这里，我们看到我们可以在不同浏览器之间劫持Session，并且在一个浏览器中执行的操作可以影响另一个浏览器中页面的状态。  
 因为HTTP是无状态的，所以无法知道来自chrome的Session ID是否被模拟，并且firefox也无法知道它的Session ID已被劫持。

@@ -40,7 +40,7 @@ Cookie由浏览器维护。
 在大多数浏览器设置中，有一个与cookie隐私相关的设置。  
 打开它时，您应该能够看到类似于以下内容的内容。
 
-![](https://res.cloudinary.com/dy5dvcuc1/image/upload/v1536669103/golang_web_25_1.png)
+{% img https://res.cloudinary.com/dy5dvcuc1/image/upload/v1536669103/golang_web_25_1.png "" %}
 
 Cookie具有到期时间，并且有两种类型的Cookie以其生命周期区分：会话cookie和持久性cookie。  
 如果您的应用程序未设置cookie到期时间，浏览器关闭后浏览器将不会将其保存到本地文件系统中。  
@@ -97,7 +97,7 @@ cookie := http.Cookie{
 http.SetCookie(w, &cookie)
 ```
 
-上面的示例显示了如何设置cookie。现在让我们看看如何获​​取已设置的cookie：
+上面的示例显示了如何设置cookie。现在让我们看看如何获取已设置的cookie：
 
 ### Get Cookie
 

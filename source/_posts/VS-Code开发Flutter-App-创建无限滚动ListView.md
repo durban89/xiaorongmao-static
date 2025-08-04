@@ -183,4 +183,5 @@ class MyApp extends StatelessWidget {
 
 无论你滚动多远，你都应该看到一个单词配对列表。如下图
 
-![](https://res.cloudinary.com/dy5dvcuc1/image/upload/v1536274634/xiaorongmao/xrm_web_23_1.png)
+{% img https://res.cloudinary.com/dy5dvcuc1/image/upload/v1536274634/xiaorongmao/xrm_web_23_1.png "" %}
+

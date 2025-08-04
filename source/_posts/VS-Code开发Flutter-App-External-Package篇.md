@@ -79,7 +79,8 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-![](https://res.cloudinary.com/dy5dvcuc1/image/upload/v1535639188/xiaorongmao/xrm_web_16_1.png)
+{% img https://res.cloudinary.com/dy5dvcuc1/image/upload/v1535639188/xiaorongmao/xrm_web_16_1.png "" %}
+
 
 如果应用程序正在运行，请使用hot reload功能更新正在运行的应用程序。  
 每次进行hot reload操作或保存项目时，应该在正在运行的应用程序中看到一个随机选择的不同单词对。  
